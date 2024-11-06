@@ -1,4 +1,4 @@
-# Infinite 404 cache demo
+# Infinite 404 cache demo https://github.com/vercel/next.js/discussions/72414
 
 1. `npm run build`
 1. `npm run start`

@@ -1,3 +1,6 @@
+// @ts-expect-error raw module via Webpack
+import inlineScript from "../inline-scripts/test";
+
 import "./globals.css";
 
 export default function RootLayout({
@@ -7,7 +10,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: inlineScript.replace("{{ value }}", process.env.MY_VALUE),
+          }}
+        ></script>
+      </body>
     </html>
   );
 }

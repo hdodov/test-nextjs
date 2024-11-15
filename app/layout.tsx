@@ -10,14 +10,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
+      <head>
         <script
           dangerouslySetInnerHTML={{
             __html: inlineScript.replace("{{ value }}", process.env.MY_VALUE),
           }}
         ></script>
-      </body>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

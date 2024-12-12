@@ -7,8 +7,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   const lang = await new Promise<string>((resolve) => {
-    setLangResolve(resolve);
-    setTimeout(() => resolve("en"), 1000);
+    console.time("resolve");
+    setLangResolve((v) => {
+      console.timeEnd("resolve");
+      resolve(v);
+    });
+    setTimeout(() => resolve("en"), 100);
   });
   return (
     <html lang={lang}>

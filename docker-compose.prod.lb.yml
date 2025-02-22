@@ -1,11 +1,15 @@
 services:
   next-1:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3001:3000"
 
   next-2:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile2
     ports:
       - "3002:3000"
 

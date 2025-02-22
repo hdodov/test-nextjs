@@ -1,0 +1,11 @@
+.git
+.next
+.pnpm-store
+node_modules
+
+.dockerignore
+.gitignore
+docker-compose*
+Dockerfile
+nginx.conf
+README.md

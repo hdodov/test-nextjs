@@ -1,4 +1,4 @@
-To reproduce:
+# Reproduction for https://github.com/vercel/next.js/issues/80578
 
 1. `pnpm dev`
 2. Open http://localhost:3000/foo-Bar

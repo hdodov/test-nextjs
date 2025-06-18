@@ -1,6 +1,6 @@
 1. `pnpm docker:prod` to run the app in Docker (standalone) in prod mode
 
-2. You'll see the following in the logs:
+2. You'll see the following in the logs (notice how large `__NEXT_PRIVATE_STANDALONE_CONFIG` is):
 
    ```plaintext
    next-1  |    ▲ Next.js 15.3.3

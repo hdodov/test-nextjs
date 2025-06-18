@@ -1,3 +1,5 @@
+# Reproduction for https://github.com/vercel/next.js/issues/80663
+
 1. `pnpm docker:prod` to run the app in Docker (standalone) in prod mode
 
 2. You'll see the following in the logs (notice how large `__NEXT_PRIVATE_STANDALONE_CONFIG` is):
